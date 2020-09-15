@@ -17,8 +17,15 @@
 dotnet build;
 cd TestProject.WebAPI;
 dotnet run
+
 ## Testing
 dotnet build && dotnet test --logger xunit --results-directory ./reports/
+
 ## Deploying
+If tests was successfull 
+To run application should be used docker-compose up 
+To build application docker-compose up --build
+docker-compose should be run on environment with installed linux and docker
 
 ## Additional Information
+API was developed in Windows 10 in WSL
