@@ -7,3 +7,9 @@ services:
     environment:
       ACCEPT_EULA: Y
       SA_PASSWORD: YourStrong@Passw0rd
+      
+  webapi:
+    build: ./TestProject.WebAPI
+    ports: 
+        - 443:433
+        - 80:80
